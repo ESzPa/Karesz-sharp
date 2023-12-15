@@ -16,7 +16,7 @@ namespace Karesz
 		class Robot
 		{
 			#region statikus tulajdonságok
-			static readonly int várakozási_idő = 100;
+			static readonly int várakozási_idő = 0;
 			public static Form1 form;
 			static Pálya pálya { get => Robot.form.pálya; }
 			public static List<Robot> lista = new List<Robot>();
