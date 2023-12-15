@@ -6,5 +6,5 @@ Változtatások a OOPKareszhoz képest:
 -Jobbra()--: Jobbra fordul 1-et  
 -Balra()----: Balra fordul 1-et  
 -Végtelenkő(bool x)---: végtelenkövet tud adni  
--ElőreRakj(x, y)--------: x Hányat lép; y kövek színe
+-ElőreRakj(x, y)--------: x Hányat lép; y kövek színe  
 -Tanar.cs--: Kövek száma változókban  
