@@ -13,6 +13,10 @@ namespace Karesz
 {
 	partial class Form1
 	{
+		class Glo
+		{
+			public static bool végtelenkő;
+		}
 		class Robot
 		{
 			#region statikus tulajdonságok
@@ -174,7 +178,7 @@ namespace Karesz
 					golyesz.Feladat = delegate ()
 					{
                         while (true)
-							golyesz.Lépj();
+							golyesz.Előre();
 					};
                 }
 				Robot.Ellövendő_lövedékek.Clear();
@@ -252,7 +256,7 @@ namespace Karesz
 			/// Mozog az Y n tengelyen értékkel
 			/// </summary>
 			/// <param name="n"></param>
-			public void Előre(int n)
+			public void Előre(int n = 1)
 			{
 				if (n == 0) return;
                 for (int i = 0; i < Math.Abs(n); i++)
@@ -261,6 +265,11 @@ namespace Karesz
                     Cselekvés_vége();
                 }
             }
+
+			public void Végtelen_kő(bool n)
+			{
+				Glo.végtelenkő = n;
+			}
 
 			/// <summary>
 			/// Elforgatja a robotot a megadott irányban. (Csak normális irányokra reagál.)
@@ -284,7 +293,10 @@ namespace Karesz
 				else
 				{
 					pálya.LegyenItt(H, szín);
-					--kődb[szín - 2];
+					if (!Glo.végtelenkő)
+					{
+                        --kődb[szín - 2];
+                    }
 					idő++;
 				}
 				Cselekvés_vége();

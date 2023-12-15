@@ -9,15 +9,14 @@ namespace Karesz
 	{
 		#region Robotokra visszavezetett parancsok
 
-		void Előre(int n) =>
+		void Végtelenkő(bool n) =>
+			Robot.akit_kiválasztottak.Végtelen_kő(n);
+		void Előre(int n = 1) =>
 			Robot.akit_kiválasztottak.Előre(n);
-
 		void Jobbra() =>
 			Robot.akit_kiválasztottak.Fordulj(1);
-
 		void Balra() =>
 			Robot.akit_kiválasztottak.Fordulj(-1);
-
 		void Fordulj(int irány) => 
 			Robot.akit_kiválasztottak.Fordulj(irány);
 		int Köveinek_száma_ebből(int szín) => 
