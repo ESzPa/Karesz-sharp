@@ -262,15 +262,6 @@ namespace Karesz
                 }
             }
 
-
-			/// <summary>
-			/// Lépteti a robotot a megfelelő irányba.
-			/// </summary>
-			public void Lépj()
-			{
-				helyigény = h+v;
-				Cselekvés_vége();
-			}
 			/// <summary>
 			/// Elforgatja a robotot a megadott irányban. (Csak normális irányokra reagál.)
 			/// </summary>

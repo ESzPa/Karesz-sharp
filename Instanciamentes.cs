@@ -18,9 +18,6 @@ namespace Karesz
 		void Balra() =>
 			Robot.akit_kiválasztottak.Fordulj(-1);
 
-
-        void Lépj() => 
-			Robot.akit_kiválasztottak.Lépj();
 		void Fordulj(int irány) => 
 			Robot.akit_kiválasztottak.Fordulj(irány);
 		int Köveinek_száma_ebből(int szín) => 
