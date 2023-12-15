@@ -247,6 +247,22 @@ namespace Karesz
 				(h.X, h.Y) = (x, y);
 				(helyigény.X, helyigény.Y) = (x, y);
 			}
+
+			/// <summary>
+			/// Mozog az Y n tengelyen értékkel
+			/// </summary>
+			/// <param name="n"></param>
+			public void Előre(int n)
+			{
+				if (n == 0) return;
+                for (int i = 0; i < Math.Abs(n); i++)
+                {
+                    helyigény = h + v * Math.Sign(n);
+                    Cselekvés_vége();
+                }
+            }
+
+
 			/// <summary>
 			/// Lépteti a robotot a megfelelő irányba.
 			/// </summary>
