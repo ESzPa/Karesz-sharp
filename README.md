@@ -5,4 +5,5 @@ Változtatások a OOPKareszhoz képest:
 -Előre(x)---: x-el tud előre menni és -x-el hátra  
 -Jobbra()--: Jobbra fordul 1-et  
 -Balra()----: Balra fordul 1-et  
+-Végtelenkő(bool x)---: végtelenkövet tud adni
 -Tanar.cs--: Kövek száma változókban  
