@@ -266,6 +266,18 @@ namespace Karesz
                 }
             }
 
+			public void ElőreRakj(int n, int c)
+			{
+                if (n == 0) return;
+				for(int i = 0; i < n; i++)
+				{
+                    helyigény = h + v * Math.Sign(n);
+                    Cselekvés_vége();
+					Tegyél_le_egy_kavicsot(c);
+                }
+				Cselekvés_vége();
+            }
+
 			public void Végtelen_kő(bool n)
 			{
 				Glo.végtelenkő = n;

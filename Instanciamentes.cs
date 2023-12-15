@@ -8,7 +8,8 @@ namespace Karesz
 	partial class Form1
 	{
 		#region Robotokra visszavezetett parancsok
-
+		void ElőreRakj(int n =1, int c = 2) =>
+			Robot.akit_kiválasztottak.ElőreRakj(n, c);
 		void Végtelenkő(bool n) =>
 			Robot.akit_kiválasztottak.Végtelen_kő(n);
 		void Előre(int n = 1) =>
