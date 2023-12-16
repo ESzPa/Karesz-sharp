@@ -274,8 +274,8 @@ namespace Karesz
                     helyigény = h + v * Math.Sign(n);
                     Cselekvés_vége();
 					Tegyél_le_egy_kavicsot(c);
+                    Cselekvés_vége();
                 }
-				Cselekvés_vége();
             }
 
 			public void Végtelen_kő(bool n)

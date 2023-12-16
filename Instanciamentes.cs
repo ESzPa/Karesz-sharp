@@ -10,7 +10,7 @@ namespace Karesz
 		#region Robotokra visszavezetett parancsok
 		void ElőreRakj(int n =1, int c = 2) =>
 			Robot.akit_kiválasztottak.ElőreRakj(n, c);
-		void Végtelenkő(bool n) =>
+		void Végtelenkő(bool n = true) =>
 			Robot.akit_kiválasztottak.Végtelen_kő(n);
 		void Előre(int n = 1) =>
 			Robot.akit_kiválasztottak.Előre(n);
@@ -18,13 +18,11 @@ namespace Karesz
 			Robot.akit_kiválasztottak.Fordulj(1);
 		void Balra() =>
 			Robot.akit_kiválasztottak.Fordulj(-1);
-		void Fordulj(int irány) => 
-			Robot.akit_kiválasztottak.Fordulj(irány);
 		int Köveinek_száma_ebből(int szín) => 
 			Robot.akit_kiválasztottak.Köveinek_száma_ebből(szín);
 		void Vegyél_fel_egy_kavicsot() => 
 			Robot.akit_kiválasztottak.Vegyél_fel_egy_kavicsot();
-		void Tegyél_le_egy_kavicsot(int szín = fekete) => 
+		void Tegyél_le_egy_kavicsot(int szín = 2) => 
 			Robot.akit_kiválasztottak.Tegyél_le_egy_kavicsot(szín);
 		bool Van_e_itt_Kavics() => 
 			Robot.akit_kiválasztottak.Alatt_van_kavics();
