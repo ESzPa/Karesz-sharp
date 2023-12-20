@@ -266,6 +266,11 @@ namespace Karesz
                 }
             }
 
+			/// <summary>
+			/// Lép és lerak 
+			/// </summary>
+			/// <param name="n"></param>
+			/// <param name="c"></param>
 			public void ElőreRakj(int n, int c)
 			{
                 if (n == 0) return;
@@ -278,6 +283,10 @@ namespace Karesz
                 }
             }
 
+			/// <summary>
+			/// Nem fogy a köve
+			/// </summary>
+			/// <param name="n"></param>
 			public void Végtelen_kő(bool n)
 			{
 				Glo.végtelenkő = n;
@@ -292,6 +301,7 @@ namespace Karesz
 				v.Forgat(forgásirány);
 				Cselekvés_vége();
 			}
+
 			/// <summary>
 			/// Lerakja az adott színű követ a pályán a robot helyére.
 			/// </summary>

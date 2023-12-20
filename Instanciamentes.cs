@@ -10,6 +10,10 @@ namespace Karesz
 		#region Robotokra visszavezetett parancsok
 		void ElőreRakj(int n = 1, int c = fekete) =>
 			Robot.akit_kiválasztottak.ElőreRakj(n, c);
+		/// <summary>
+		/// asd
+		/// </summary>
+		/// <param name="n"></param>
 		void Végtelenkő(bool n = true) =>
 			Robot.akit_kiválasztottak.Végtelen_kő(n);
 		void Előre(int n = 1) =>
