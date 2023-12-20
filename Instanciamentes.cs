@@ -8,20 +8,29 @@ namespace Karesz
 	partial class Form1
 	{
 		#region Robotokra visszavezetett parancsok
+		/// <summary>
+		/// Lép és lerak n alkalommal, paraméter nélkül egyszer
+		/// </summary>
+		/// <param name="n"></param>
+		/// <param name="c"></param>
 		void ElőreRakj(int n = 1, int c = fekete) =>
 			Robot.akit_kiválasztottak.ElőreRakj(n, c);
 		/// <summary>
-		/// asd
+		/// Nem fogy a köve
 		/// </summary>
 		/// <param name="n"></param>
 		void Végtelenkő(bool n = true) =>
 			Robot.akit_kiválasztottak.Végtelen_kő(n);
+		/// <summary>
+		/// Előre megy n alkalommal, paraméter nélkül egyszer
+		/// </summary>
+		/// <param name="n"></param>
 		void Előre(int n = 1) =>
 			Robot.akit_kiválasztottak.Előre(n);
-		void Jobbra() =>
-			Robot.akit_kiválasztottak.Fordulj(jobbra);
-		void Balra() =>
-			Robot.akit_kiválasztottak.Fordulj(balra);
+		void Jobbra(int n = 1) =>
+			Robot.akit_kiválasztottak.Fordulj(jobbra, n);
+		void Balra(int n = 1) =>
+			Robot.akit_kiválasztottak.Fordulj(balra, n);
 		int Köveinek_száma_ebből(int szín) => 
 			Robot.akit_kiválasztottak.Köveinek_száma_ebből(szín);
 		void Vegyél_fel_egy_kavicsot() => 

@@ -296,10 +296,13 @@ namespace Karesz
 			/// Elforgatja a robotot a megadott irányban. (Csak normális irányokra reagál.)
 			/// </summary>
 			/// <param name="forgásirány"></param>
-			public void Fordulj(int forgásirány)
+			public void Fordulj(int forgásirány, int alkalom = 1)
 			{
-				v.Forgat(forgásirány);
-				Cselekvés_vége();
+				for(int i = 0;i < alkalom; i++)
+				{
+                    v.Forgat(forgásirány);
+                    Cselekvés_vége();
+                }
 			}
 
 			/// <summary>

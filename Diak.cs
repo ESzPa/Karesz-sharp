@@ -19,6 +19,7 @@ namespace Karesz
             karesz.Feladat = delegate ()
             {
                 //code goes here brrrrr
+                Jobbra(2);
             };
         }
     }
