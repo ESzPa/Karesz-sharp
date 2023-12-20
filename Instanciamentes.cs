@@ -27,14 +27,34 @@ namespace Karesz
 		/// <param name="n"></param>
 		void Előre(int n = 1) =>
 			Robot.akit_kiválasztottak.Előre(n);
+		/// <summary>
+		/// Jobbra fordul, paraméter esetén n alkalommal
+		/// </summary>
+		/// <param name="n"></param>
 		void Jobbra(int n = 1) =>
 			Robot.akit_kiválasztottak.Fordulj(jobbra, n);
-		void Balra(int n = 1) =>
+        /// <summary>
+        /// Balra fordul, paraméter esetén n alkalommal
+        /// </summary>
+        /// <param name="n"></param>
+        void Balra(int n = 1) =>
 			Robot.akit_kiválasztottak.Fordulj(balra, n);
+		/// <summary>
+		/// Visszaad egy int-et, hogy hány kő maradt egy adott színből
+		/// </summary>
+		/// <param name="szín"></param>
+		/// <returns></returns>
 		int Köveinek_száma_ebből(int szín) => 
 			Robot.akit_kiválasztottak.Köveinek_száma_ebből(szín);
+		/// <summary>
+		/// Felveszi az alatta lévő követ
+		/// </summary>
 		void Vegyél_fel_egy_kavicsot() => 
 			Robot.akit_kiválasztottak.Vegyél_fel_egy_kavicsot();
+		/// <summary>
+		/// Letesz egy kavicsot a paraméterben adott színből
+		/// </summary>
+		/// <param name="szín"></param>
 		void Tegyél_le_egy_kavicsot(int szín = fekete) => 
 			Robot.akit_kiválasztottak.Tegyél_le_egy_kavicsot(szín);
 		bool Van_e_itt_Kavics() => 
